@@ -4,7 +4,8 @@ const jwt = require("jsonwebtoken");
 
 module.exports.userVerification = (req, res) => {
   // Read the token from the browser cookie
-  const token = req.cookies.token;
+  const token = req.cookies.token || 
+                  (req.headers.authorization && req.headers.authorization.split(" ")[1]);
 
   // If no token → user is not logged in
   if (!token) {

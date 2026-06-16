@@ -10,7 +10,8 @@ const ProtectedRoute = ({ children }) => {
     useEffect(() => {
         const verifyToken = async () => {
             // no cookie at all → redirect immediately
-            if (!cookies.token) {
+            const localToken = localStorage.getItem("token");
+            if (!cookies.token && !localToken) {
                 window.location.href = "https://zerodha-frontend-theta-six.vercel.app";
                 return;
             }

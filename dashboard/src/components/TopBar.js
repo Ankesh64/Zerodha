@@ -8,6 +8,7 @@ const TopBar = () => {
 
     const handleLogout = () => {
         removeCookie("token");
+        localStorage.removeItem("token");
         window.location.href = "https://zerodha-frontend-theta-six.vercel.app";
     };
 
