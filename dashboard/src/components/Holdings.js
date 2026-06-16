@@ -1,17 +1,67 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { data, VerticalGraph } from './VerticalGraph';
 
 // import { holdings } from '../data/data';
 
 const Holdings = () => {
     const [allHoldings, setAllHoldings] = useState([]);
-    
+
     useEffect(() => {
         axios.get("http://localhost:3002/allHoldings").then((res) => {
             setAllHoldings(res.data);
         });
     }, []);
 
+    // Empty state UI
+    if (allHoldings.length === 0) {
+        return (
+            <div className="empty-state">
+                <img
+                    src="https://zerodha.com/static/images/empty-holdings.png"
+                    alt="No holdings"
+                    onError={(e) => e.target.style.display = 'none'}
+                />
+                <h3>You don't have any holdings</h3>
+                <p>Your long term investments will appear here</p>
+                <button
+                    className="btn btn-primary"
+                    onClick={() => window.location.href = "http://localhost:3001"}
+                >
+                    Explore stocks
+                </button>
+            </div>
+        );
+    }
+
+    // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+    const labels = allHoldings.map((subArray) => subArray["name"]);
+
+    const data = {
+        labels,
+        datasets: [
+            {
+          label: 'Stock Price',
+          data: allHoldings.map((stock) => stock.price),
+          backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        },
+        ],
+    };
+    //     export const data = {
+    //   labels,
+    //   datasets: [
+    //     {
+    //       label: 'Dataset 1',
+    //       data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+    //       backgroundColor: 'rgba(255, 99, 132, 0.5)',
+    //     },
+    //     {
+    //       label: 'Dataset 2',
+    //       data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+    //       backgroundColor: 'rgba(53, 162, 235, 0.5)',
+    //     },
+    //   ],
+    // };
 
     return (
         <>
@@ -75,6 +125,7 @@ const Holdings = () => {
                     <p>P&L</p>
                 </div>
             </div>
+            <VerticalGraph data={data} />
         </>
     );
 };

@@ -1,8 +1,17 @@
-import react from 'react';
+import React from 'react';
+import { useCookies } from "react-cookie";
 
 import Menu from "./Menu";
 
 const TopBar = () => {
+    const [cookies, removeCookie] = useCookies(['token']);
+
+    const handleLogout = () => {
+        removeCookie("token");
+        window.location.href = "http://localhost:3001";
+    };
+
+
     return (
         <div className="topbar-container">
             <div className="indices-container">
@@ -19,6 +28,10 @@ const TopBar = () => {
             </div>
 
             <Menu />
+
+            <button onClick={handleLogout} className="logout-btn">
+                Logout
+            </button>
         </div>
     );
 };

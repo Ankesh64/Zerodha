@@ -4,6 +4,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const cookieParser = require("cookie-parser");
+const authRoute = require("./Routes/AuthRoute");
 
 const { HoldingsModel } = require("./model/HoldingsModel");
 const { PositionsModel } = require("./model/PositionsModel")
@@ -14,8 +16,17 @@ const uri = process.env.MONGO_URL;
 
 const app = express();
 
+// Add these middleware BEFORE your existing routes
+app.use(cors({
+  origin: ["http://localhost:3000", "http://localhost:3001"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true,  // important: allows cookies to be sent
+}));
+app.use(cookieParser());  // lets Express read cookies
+app.use(express.json());
+
+
 app.use(bodyParser.json());
-app.use(cors());
 
 // app.get("/addHoldings", async (req, res) => {
 //     let tempHoldings = [
@@ -186,6 +197,8 @@ app.use(cors());
 //     });
 //     res.send("Done!");
 // });
+
+app.use("/", authRoute);
 
 app.get("/allHoldings", async (req, res) => {
     let allHoldings = await HoldingsModel.find({});
