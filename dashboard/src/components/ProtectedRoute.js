@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useCookies } from "react-cookie";
+// import { useCookies } from "react-cookie";
 import axios from "axios";
 
 const ProtectedRoute = ({ children }) => {
-  const [cookies] = useCookies(["token"]);
+//   const [cookies] = useCookies(["token"]);
   const [isVerified, setIsVerified] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -38,7 +38,12 @@ const ProtectedRoute = ({ children }) => {
         const { data } = await axios.post(
           "https://zerodha-backend-ajq9.onrender.com/",
           {},
-          { withCredentials: true },
+        //   { withCredentials: true },//chatgpt
+        {
+            headers: {
+                Authorization: `Bearer ${localToken}`,
+            },
+        }
         );
 
         if (data.status) {
@@ -54,7 +59,8 @@ const ProtectedRoute = ({ children }) => {
     };
 
     verifyToken();
-  }, [cookies]);
+}, []);
+//   }, [cookies]);
 
   // show loading while checking token
   if (loading) {

@@ -32,7 +32,7 @@ module.exports.Signup = async (req, res, next) => {
       token,
       user,
     });
-    next();
+    // next();    //c  
   } catch (error) {
     console.error(error);
   }
@@ -73,7 +73,7 @@ module.exports.Login = async (req, res, next) => {
       success: true,
       token,
     });
-    next();
+    // next();   //c
   } catch (error) {
     console.error(error);
   }
