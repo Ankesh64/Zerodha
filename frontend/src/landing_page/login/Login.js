@@ -111,7 +111,7 @@ const Login = () => {
             </div>
 
             <div className="l-forgot">
-              <a href="#">Forgot password?</a>
+              <a href="/">Forgot password?</a>
             </div>
 
             <button type="submit" className="l-btn" disabled={loading}>
@@ -121,8 +121,8 @@ const Login = () => {
 
           <p className="l-terms">
             By continuing, you agree to Zerodha's{" "}
-            <a href="#">Terms & Conditions</a> and{" "}
-            <a href="#">Privacy Policy</a>
+            <a href="/">Terms & Conditions</a> and{" "}
+            <a href="/">Privacy Policy</a>
           </p>
         </div>
       </div>
