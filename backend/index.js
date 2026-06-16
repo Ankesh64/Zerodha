@@ -18,7 +18,7 @@ const app = express();
 
 // Add these middleware BEFORE your existing routes
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3001"],
+  origin: ["https://zerodha-frontend-theta-six.vercel.app", "https://zerodha-dashboard-two-ashen.vercel.app"], // allow these origins to access the backend
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,  // important: allows cookies to be sent
 }));
