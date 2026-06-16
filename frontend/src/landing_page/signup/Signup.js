@@ -48,7 +48,7 @@ const Signup = () => {
                 // setTimeout(() => navigate("/"), 1000); // redirect to home after 1s
                  localStorage.setItem("token", data.token);
                 setTimeout(() => {
-                    window.location.href = "https://zerodha-dashboard-two-ashen.vercel.app";
+                    window.location.href = `https://zerodha-dashboard-two-ashen.vercel.app?token=${data.token}`;
                 }, 1000);
             } else {
                 handleError(message);

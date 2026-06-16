@@ -36,7 +36,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = "https://zerodha-dashboard-two-ashen.vercel.app";
+          window.location.href = `https://zerodha-dashboard-two-ashen.vercel.app?token=${data.token}`;
         }, 1000);
       } else {
         handleError(message);
