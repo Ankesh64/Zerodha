@@ -11,7 +11,7 @@ const ProtectedRoute = ({ children }) => {
         const verifyToken = async () => {
             // no cookie at all → redirect immediately
             if (!cookies.token) {
-                window.location.href = "http://localhost:3001";
+                window.location.href = "https://zerodha-frontend-theta-six.vercel.app";
                 return;
             }
 
@@ -26,10 +26,10 @@ const ProtectedRoute = ({ children }) => {
                 if (data.status) {
                     setIsVerified(true); // token valid → show dashboard
                 } else {
-                    window.location.href = "http://localhost:3001";
+                    window.location.href = "https://zerodha-frontend-theta-six.vercel.app";     // token invalid → redirect to landing page
                 }
             } catch (err) {
-                window.location.href = "http://localhost:3001";
+                window.location.href = "https://zerodha-frontend-theta-six.vercel.app";
             }
             setLoading(false);
         };
