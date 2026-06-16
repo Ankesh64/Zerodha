@@ -14,45 +14,45 @@ function Footer() {
           <div className='col'>
             <p>Company</p>
             <div className='d-flex flex-column gap-0'>
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }} >About</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }} >About</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Products</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Products</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Pricing</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Pricing</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Referral programme</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Referral programme</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Careers</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Careers</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Zerodha.tech</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Zerodha.tech</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Press & media</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Press & media</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Zerodha cares (CSR)</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Zerodha cares (CSR)</a>
             </div>
           </div>
           <div className='col'>
             <p>Support</p>
             <div className='d-flex flex-column gap-0'>
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Contact</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Contact</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Support portal</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Support portal</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Z-Connect blog</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Z-Connect blog</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>List of charges</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>List of charges</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Downloads & resources</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Downloads & resources</a>
             </div>
           </div>
           <div className='col'>
             <p>Account</p>
             <div className='d-flex flex-column gap-0'>
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Open an account</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Open an account</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>Fund transfer</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Fund transfer</a>
               <br />
-              <a href="" className=" text-muted" style={{ textDecoration: "none" }}>60 day challenge</a>
+              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>60 day challenge</a>
             </div>
           </div>
         </div>
