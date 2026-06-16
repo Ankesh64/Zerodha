@@ -18,7 +18,7 @@ const ProtectedRoute = ({ children }) => {
             try {
                 // verify token with backend
                 const { data } = await axios.post(
-                    "http://localhost:3002/",
+                    "https://zerodha-backend-ajq9.onrender.com/",
                     {},
                     { withCredentials: true }
                 );
