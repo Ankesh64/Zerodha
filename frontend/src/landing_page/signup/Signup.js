@@ -152,8 +152,8 @@ const Signup = () => {
                     </form>
                     <p className="z-terms">
                         By continuing, you agree to Zerodha's{" "}
-                        <a href="#">Terms &amp; Conditions</a> and{" "}
-                        <a href="#">Privacy Policy</a>
+                        <a href="/">Terms &amp; Conditions</a> and{" "}
+                        <a href="/">Privacy Policy</a>
                     </p>
                 </div>
             </div>
