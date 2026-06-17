@@ -4,55 +4,42 @@ function Footer() {
   return (
     <footer style={{ backgroundColor: "rgb(250, 250, 250)" }}>
       <div className='container border-top mt-5'>
-        <div className='row mt-5'>
-          <div className='col'>
-            <img src='media/images/logo.svg' style={{ width: "50%" }} />
+        <div className='row mt-5 g-4'>
+          <div className='col-12 col-md-3'>
+            <img src='media/images/logo.svg' alt="Zerodha" style={{ width: "50%" }} />
             <p className='mt-3'>
               &copy; 2010 - 2024, Not Zerodha Broking Ltd. All rights reserved.
             </p>
           </div>
-          <div className='col'>
+          <div className='col-6 col-md-3'>
             <p>Company</p>
             <div className='d-flex flex-column gap-0'>
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }} >About</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Products</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Pricing</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Referral programme</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Careers</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Zerodha.tech</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Press & media</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Zerodha cares (CSR)</a>
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>About</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Products</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Pricing</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Referral programme</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Careers</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Zerodha.tech</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Press & media</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Zerodha cares (CSR)</a>
             </div>
           </div>
-          <div className='col'>
+          <div className='col-6 col-md-3'>
             <p>Support</p>
             <div className='d-flex flex-column gap-0'>
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Contact</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Support portal</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Z-Connect blog</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>List of charges</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Downloads & resources</a>
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Contact</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Support portal</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Z-Connect blog</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>List of charges</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Downloads & resources</a>
             </div>
           </div>
-          <div className='col'>
+          <div className='col-6 col-md-3'>
             <p>Account</p>
             <div className='d-flex flex-column gap-0'>
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Open an account</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>Fund transfer</a>
-              <br />
-              <a href="/" className=" text-muted" style={{ textDecoration: "none" }}>60 day challenge</a>
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Open an account</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>Fund transfer</a><br />
+              <a href="/" className="text-muted" style={{ textDecoration: "none" }}>60 day challenge</a>
             </div>
           </div>
         </div>
@@ -70,19 +57,16 @@ function Footer() {
             ensure you carefully read the Risk Disclosure Document as prescribed
             by SEBI | ICF
           </p>
-
           <p>
             Procedure to file a complaint on SEBI SCORES: Register on SCORES
             portal. Mandatory details for filing complaints on SCORES: Name,
             PAN, Address, Mobile Number, E-mail ID. Benefits: Effective
             Communication, Speedy redressal of the grievances
           </p>
-
           <p>
             Investments in securities market are subject to market risks; read
             all the related documents carefully before investing.
           </p>
-
           <p>
             "Prevent unauthorised transactions in your account. Update your
             mobile numbers/email IDs with your stock brokers. Receive
